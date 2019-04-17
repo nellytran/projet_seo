@@ -6,9 +6,8 @@
     <meta name="description" content=""/> <!--à remplir-->
 	<meta name="keywords" content=""/> <!--à remplir-->
 	<meta name="author" content="N.T"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet"> <!--voir si à retirer ou non-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> <!--voir si à retirer ou non-->
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./img/logo.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -17,44 +16,88 @@
 
     <nav class="col- col-s-12 col-12">
         <ul>
-            <li><a href="index.html">Index</a></li>
+            <li><a href="index.html" id="nav_sweeties">Sweeties</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="">Blog</a></li> 
             <li><a href="">Contact</a></li>
         </ul>
     </nav>
 
     <main class="flex">
-        <div class="main_div" class="box" >
-            <p class="main_title">Sweeties</p>
-            <p class="main_subtitle">Retrouvez vos snacks et gâteaux asiatiques préférés dans toute l'Île-de-France</p>
+        <div class="main_div box">
+            <h1 class="main_title">Retrouvez vos snacks et gâteaux asiatiques préférés <br> dans toute l'Ile-de-France</h1>
+            <h3 class="main_subtitle"></h3>
         </div>
     </main>
 
     <div class="produits_div">
-        <p id="produits_title">Produits</p>
+        <p id="produits_title"><b>PRODUITS</b></p>
+        <br>
+        <p id="produits_txt">Envie de déguster de délicieuses gourmandises venues d'Asie ? Vous ne connaissez cependant pas
+           les bons coins où les trouver... Pas de panique ! <br> Sweeties a rassemblé pour vous le top des snacks
+           et autres gâteaux que vous pouvez retrouver dans toute l’Île-de-France. 
+           <br> Qui sait, vous trouverez peut-être des Kit Kat au matcha à deux pas de chez vous !</p>
         <section>
-            <article class=" col- col-s-6 col-3">
-                <div class="img_div">
-                    <img src="./img/kitkat_matcha.png" width="90%">
+            <article class=" col- col-s-4 col-2">
+                <div class="flex_article_img img_div">
+                    <img class="box_article_img" src="./img/kitkat_matcha.png">
                 </div>
-                <div>
+                <div class="article_infos">
                     <p class="article_title">Kit Kat au matcha</p>
                     <button>Où me trouver</button>
                 </div>
             </article>
-            <article class="col- col-s-6 col-3">
-                <div class="img_div">
-                    <img src="./img/pocky_fraise.png" width="50%">
+            <article class="col- col-s-4 col-2">
+                <div class="flex_article_img img_div">
+                    <img src="./img/pocky_fraise.png">
                 </div>
-                <div>
+                <div class="article_infos">
                     <p class="article_title">Pocky à la fraise</p>
                     <button>Où me trouver</button>
                 </div>
             </article>
-            <article class="col- col-s-6 col-3"></article>
-            <article class="col- col-s-6 col-3"></article>
+            <article class="col- col-s-4 col-2">
+                <div class="flex_article_img img_div">
+                    <img src="./img/mochi_taro.png">
+                </div>
+                <div class="article_infos">
+                    <p class="article_title">Mochi au taro</p>
+                    <button>Où me trouver</button>
+                </div>
+            </article>
+            <article class="col- col-s-4 col-2">
+                <div class="flex_article_img img_div">
+                    <img src="./img/honey_dipped_snack.png">
+            </div>
+            <div class="article_infos">
+                <p class="article_title">Honey dipped snack</p>
+                <button>Où me trouver</button>
+            </div>
+            </article>
+            <article class="col- col-s-4 col-2">
+                <div class="flex_article_img img_div">
+                        <img src="./img/chocopie.png">
+                </div>
+                <div class="article_infos">
+                    <p class="article_title">ChocoPie</p>
+                    <button>Où me trouver</button>
+                </div>
+            </article>
+            <article class="col- col-s-4 col-2">
+                <div class="flex_article_img img_div">
+                        <img src="./img/sweet_potatoe_snack.png">
+                </div>
+                <div class="article_infos">
+                    <p class="article_title">Sweet potatoes snack</p>
+                    <button>Où me trouver</button>
+                </div>
+            </article>
         </section>
     </div>
+
+    <footer>
+        <img src="./img/logo.png" width="5%">
+    </footer>
 
 </body>
 </html>
