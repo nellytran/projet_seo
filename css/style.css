@@ -59,6 +59,7 @@ nav
 {
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 nav ul
@@ -117,8 +118,7 @@ footer
 
 main
 {
-    width: 100% auto;
-    background-image: url("../img/mont_fuji.png");
+    background: url("../img/index_main_background.png") no-repeat;
 }
 
 .main_title
@@ -127,14 +127,8 @@ main
     color: #5a1c26;
     font-family: 'UD Digi Kyokasho NK-B';
     text-align: center;
-}
-
-.main_subtitle
-{
-    font-size: 18px;
-    color: #5a1c26;
-    font-family: 'Tahoma';
-    text-align: center;
+    transform: translateY(0%);
+    animation: float 6s ease-in-out infinite;
 }
 
 /***********INDEX PRODUITS**************/
@@ -175,8 +169,9 @@ article
 
 .produits_div section article .img_div:hover
 {
-    background-image: url("../img/mont_fuji_produit.png");
-    border-radius: 10px;
+    /*background-image: url("../img/mont_fuji_produit.png");
+    border-radius: 10px;*/
+    transform: translateY(-10px) scale(1.1);
 }
 
 img
@@ -238,12 +233,13 @@ img
     /*border: solid;*/
     padding: 20px 50px; 
     color: #5a1c26;
-    font-family: 'Open sans';
+    font-family: 'Tahoma';
 }
 
 .nom_produit
 {
     font-size: 50px;
+    font-family: 'UD Digi Kyokasho NK-B';
 }
 
 .page_produit_txt_presentation
@@ -275,13 +271,15 @@ img
     padding: 14px 16px;
     font-size: 17px;
     border: none;
-    background-color: white;
+    background-color: #5a1c26;
+    color: white;
 }
 
 .txt_produit button:hover
 {
-    background-color: #5a1c26;
-    color: white;
+    background-color: white;
+    border: #5a1c26 solid;
+    color: #5a1c26;
 }
 
 /***************************************/
@@ -369,7 +367,7 @@ img
 
 .seo_section
 {
-    width: 70%;
+    width: 60%;
     height: 5000px;
     margin: auto;
 }
@@ -440,11 +438,6 @@ img
         font-size: 30px !important;
     }
 
-    .main_subtitle
-    {
-        font-size: 15px;
-    }
-
     #produits_title
     {
         font-size: 40px !important ;
@@ -485,6 +478,18 @@ img
     {
         font-size: 16px !important;
     }
+
+    .seo_section
+    {
+        width: 90% !important;
+    }
+
+    .produits_div section article .img_div
+    {
+        height: 340px;
+        width: 250px;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width:0px) and (max-width:1600px)
@@ -492,5 +497,23 @@ img
     main 
     {
         background-position: center;
+    }
+}
+
+@keyframes float 
+{
+    0%
+    {
+        transform: translateY(0%);
+    }
+
+    50%
+    {
+        transform: translateY(-20%);
+    }
+
+    100%
+    {
+        transform: translateY(0%);
     }
 }
