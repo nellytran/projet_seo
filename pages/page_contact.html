@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sweeties</title>
+    <meta name="description" content=""/> <!--à remplir-->
+	<meta name="keywords" content=""/> <!--à remplir-->
+	<meta name="author" content="N.T"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+    <link rel="icon" type="image/png" href="./img/logo.png"/>
+    <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    -->
+</head>
+<body>
+
+    <nav class="col- col-s-12 col-12">
+        <ul>
+            <li><a href="index.html" id="nav_sweeties">Sweeties</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="blog.html">Blog</a></li> 
+            <li><a href="page_contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact_page_main">
+        <section class="contact_menu col- col-s-12 col-3">
+            <img class="contact_page_menu_img" src="../img/contact.png" alt="webmaster" onclick="webmasterFunction()">
+            <h1 class="contact_page_menu_h1">Webmaster</h1>
+            <h3 class="contact_page_menu_h3">Nelly TRAN</h3>
+            <img class="contact_page_menu_img" src="../img/upem_logo.png" alt="UPEM" onclick="upemFunction()">
+            <h3 class="contact_page_menu_h3_upem">Université Paris-Est Marne-la-Vallée</h3>
+        </section>
+        <section class="contact_content col- col-s-12 col-9">
+            <div class="contact_content_upem" id="upem">
+
+            </div>
+            <div class="contact_content_webmaster" id="webmaster">
+                <h1 class="webmaster_title col-4">Webmaster</h1>
+                <div class="liens_rs col-8">
+                    <img src="../img/logo_fb.png" width="5%" alt="logo Facebook">
+                    <img src="../img/logo_gmail.png" width="7%" alt="logo Gmail">
+                </div>
+                <br>
+                <p>Jeune étudiante de 19 ans en <b>DUT MMI</b>, je code à temps plein afin de réaliser des sites 
+                dotés d'un visuel dont seule moi ai le secret. J'aspire à travailler dans le domaine du 
+                <b>front-end</b>, aussi bien au niveau design que développement. Un de mes objectifs serait
+                d'être capable de concevoir un site à la fois fonctionnel, visuel et qui intègrerai les
+                principes d'UX (User Experience). 
+                </p>
+                <br>
+                <div class="contact_competences">
+                    <div class="contact_competences_languages">
+                        <img src="../img/logo_html.png" width="10%" alt="logo html 5">
+                        <img src="../img/logo_css.png" width="10%" alt="logo css 3">
+                        <img src="../img/logo_js.png" width="10%" alt="logo JavaScript">
+                    </div>
+                    <div class="contact_competences_adobe">
+                        <img src="../img/logo_ai.png" width="10%" alt="logo Illustrator">
+                        <img src="../img/logo_ps.png" width="10%" alt="logo Photoshop">
+                        <img src="../img/logo_ae.png" width="10%" alt="logo After Effects">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+    </footer>
+
+    <script>
+        function webmasterFunction() 
+        {
+            document.getElementById("webmaster").style.zIndex = "1"
+            document.getElementById("upem").style.zIndex = "0"
+        }
+        function upemFunction() 
+        {
+            document.getElementById("upem").style.zIndex = "1"
+            document.getElementById("webmaster").style.zIndex = "0"
+        }
+    </script>
+
+</body>
+</html>

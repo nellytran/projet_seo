@@ -111,7 +111,6 @@ nav ul li a:hover
 footer
 {
     height: 400px;
-    background-color:
 }
 
 /***********INDEX MAIN*****************/
@@ -165,24 +164,24 @@ article
 .produits_div section article .img_div
 {
     height: 320px;
+    padding: 5px;
+    max-width: 100%; /*pour que la dernière img de la rangée ne dépasse pas de la page*/
 }
 
 .produits_div section article .img_div:hover
 {
-    /*background-image: url("../img/mont_fuji_produit.png");
-    border-radius: 10px;*/
     transform: translateY(-10px) scale(1.1);
 }
 
 img
 {
-    display: block;
-    margin: auto;
+    display: block; 
+    max-width: 100%;/*avec height:auto = pour que img ne se déforme pas au responsive*/
+    height: auto;
 }
 
 .article_infos
 {
-    /*border: solid;*/
     height: 150px;
 }
 
@@ -213,7 +212,7 @@ img
     color: #5a1c26;
 }
 
-/***************************************/
+/***************PAGE KIT KAT**************/
 
 /**************KIT KAT IMG**************/
 
@@ -221,10 +220,16 @@ img
 {
     height: 705px;
     float: left;
-    /*border: solid;*/
+    padding: 10px;
 }
 
 /*********KIT KAT MATCHA INFOS**********/
+
+.img_page_produit
+{
+    max-width: 100%;
+    height: auto;
+}
 
 .txt_produit
 {
@@ -255,7 +260,7 @@ img
 
 .txt_produit ul
 {
-    list-style-type: none;
+    list-style-image: url('../img/icone.png');
 }
 
 .txt_produit ul li a
@@ -282,7 +287,12 @@ img
     color: #5a1c26;
 }
 
-/***************************************/
+/***********PAGE LOGIN & SIGN UP************/
+
+.form_page_main
+{
+    background-image: none;
+}
 
 /***********LOGIN PAGE TITLES**********/
 
@@ -327,16 +337,18 @@ img
 
 .form_page_main form button
 {
-    background-color: white;
+    background-color: #5a1c26;
     border: none;
     padding: 5px 16px;
     border-radius: 10px;
+    color: white;
 }
 
 .form_page_main form button:hover
 {
-    background-color: #5a1c26;
-    color: white;
+    border: solid #5a1c26;
+    color: #5a1c26;
+    background-color: white;
 }
 
 .form_page_main form a 
@@ -357,10 +369,86 @@ img
 
 .form_page_main div button
 {
-    background-color: white;
+    background-color: #5a1c26;
+    color: white;
     border: none;
     padding: 5px 16px;
     border-radius: 10px;
+}
+
+.form_page_main div button:hover
+{
+    background-color: white;
+    color: #5a1c26;
+    border: solid #5a1c26;
+}
+
+/*****************BLOG************************/
+
+.blog_main
+{
+    height: 700px;
+    margin: auto;
+}
+
+.blog_title
+{
+    text-align: center;
+    font-size: 50px;
+    color: #5a1c26;
+    font-family: 'UD Digi Kyokasho NK-B';
+}
+
+.blog_subtitle
+{
+    text-align: center;
+    font-size: 20px;
+    color: #5a1c26;
+    font-family: 'Tahoma';
+    margin-top: -35px;
+}
+
+.blog_article
+{
+    height: 500px;
+}
+
+.blog_article_div
+{
+    background-color: #5a1c26;
+    margin: 10px;
+    padding-top: 20px;
+    height: 400px;
+    position: relative;
+}
+
+.article_img
+{
+    margin: auto;
+}
+
+.blog_article_title
+{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: 'Tahoma';
+    color: white;
+}
+
+.lien_article
+{
+    font-size: 20px;
+    font-family: 'Tahoma';
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.lien_article a
+{
+    color: white;
 }
 
 /*****************ARTICLE SEO*****************/
@@ -389,16 +477,156 @@ img
     margin-left: 0;
 }
 
+/**************PAGE CONTACT***************/
+
+.contact_page_main
+{
+    background-image: none;
+}
+
+.contact_menu
+{
+    background-color: #5a1c26;
+    padding: 10px;
+    border: solid white 5px;
+    height: 700px;
+    float: left;
+}
+
+.contact_content
+{
+    float: left;
+    height: 700px;
+    padding: 20px;
+}
+
+.webmaster_title
+{
+    float: left;
+}
+
+.liens_rs
+{
+    height: 59px;
+    float: left;
+    margin-top: 20px;
+}
+
+.liens_rs img
+{
+    float: right;
+    margin-left: 10px;
+}
+
+.liens_rs img:hover
+{
+    transform: translateY(-10px) scale(1.1);
+}
+
+
+.contact_page_menu_img
+{
+    width: 50%;
+    border-radius: 50px;
+    margin: 60px auto 0;
+}
+
+.contact_page_menu_h1
+{
+    font-size: 25px;
+    font-family: 'UD Digi Kyokasho NK-B';
+    color: white;
+    text-align: center;
+}
+
+.contact_page_menu_h3
+{
+    font-size: 17px;
+    font-family: 'Tahoma';
+    color: white;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.contact_page_menu_h3_upem
+{
+    font-size: 17px;
+    font-family: 'Tahoma';
+    color: white;
+    text-align: center;
+}
+
+.contact_page_menu_img:hover
+{
+    transform: translateY(-10px) scale(1.1);
+}
+
+.contact_content_upem
+{
+    background-color: blueviolet;
+    height: 680px;
+    position: relative;
+}
+
+.contact_content_webmaster
+{
+    margin-top: -700px;
+    background-color: white;
+    height: 700px;
+    position: relative;
+    font-family: 'Tahoma';
+    text-align: justify;
+    font-size: 20px;
+}
+
+.contact_content_webmaster p
+{
+    float: left;
+    margin-top: 20px;
+}
+
+.contact_content_webmaster h1
+{
+    font-family: 'UD Digi Kyokasho NK-B';
+    font-size: 50px;
+}
+
+.contact_competences_languages
+{
+    height: 160px;
+    margin-top: 200px;
+}
+
+.contact_competences_adobe
+{
+    height: 160px;
+    margin-top: 10px;
+}
+
+.contact_competences_languages img
+{
+    margin-right: 30px;
+    float: left;
+}
+
+.contact_competences_adobe img
+{
+    margin-right: 30px;
+    float: left;
+    margin-top: 35px;
+}
+
+
 /***************QUERIES******************/
 
 /*pour tél*/
-[class*="col-"]
+@media screen and (min-width: 0px) 
 {
-    width: 100%;
+    .col- {width: 100%;}
 }
 
 /*pour tablette*/
-@media screen and (min-width: 600px) 
+@media screen and (min-width: 700px) 
 {
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -431,7 +659,84 @@ img
     .col-12 {width: 100%;}
 }
 
-@media screen and (min-width:0px) and (max-width:768px)
+/*bureau*/
+@media screen and (min-width: 768px)
+{
+    .blog_main
+    {
+        width: 60%;
+    }
+}
+
+/*tél*/
+@media screen and (min-width:0px) and (max-width:700px)
+{
+    .main_title
+    {
+        font-size: 30px !important;
+    }
+
+    #produits_title
+    {
+        font-size: 40px !important ;
+    }
+
+    #produits_txt
+    {
+        font-size: 15px !important;
+        margin: 10px;
+    }
+
+    article 
+    {
+        height: 425px;
+    }
+
+    .img_div
+    {
+        height: 250px !important;
+    }
+
+    .article_title
+    {
+        font-size: 25px !important;
+    }
+
+    .nom_produit
+    {
+        font-size: 35px !important;
+    }
+
+    .page_produit_txt_presentation
+    {
+        font-size: 17px !important;
+    }
+
+    .page_produit_list_title
+    {
+        font-size: 19px !important;
+    }
+
+    .txt_produit ul li a
+    {
+        font-size: 16px !important;
+    }
+
+    .seo_section
+    {
+        width: 90% !important;
+    }
+
+    .produits_div section article .img_div
+    {
+        height: 340px;
+        width: 250px;
+        margin: auto;
+    }
+}
+
+/*tablette*/
+@media screen and (min-width:700px) and (max-width:768px)
 {
     .main_title
     {
@@ -451,12 +756,7 @@ img
 
     .article_title
     {
-        font-size: 25px !important;
-    }
-
-    .img_page_produit
-    {
-        width: 90% !important;
+        font-size: 20px !important;
     }
 
     .nom_produit
